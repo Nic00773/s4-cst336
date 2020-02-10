@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+First Website
+and comment
+in html
+(comments can span multiple lines)
+
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+    <head>
+        <meta charset="utf-8"/>
+        <title> Nicolas Zodi : Personnal Website</title>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body>
+        <header >
+            <h1> Introduction to Assembly Language</h1>
+        </header>
+        <nav>
+            <hr width="50%"/>
+            <a href="index.html">Home</a>
+            <a class="yellow" href="assembly_language.html">What is the Assembly Language ?</a>
+            <a href="layout_of_a_source_code.html">Layout of a source code (part_1)</a>
+            <a href="layout_of_a_source_code2.html">Layout of a source code (part_2)</a>        
+        </nav>
+        <br /><br />
+        <div id="content">
+            Like machine language, assembly language is a language of
+            programming specific to a microprocessor. It assigns a name to each instruction that a user can execute
+            microprocessor. This name is called mnemonic.
+            Assembly language is therefore very close to machine language. He's just doing a bijection between
+            mnemonics, understandable by humans, and binary codes, understandable by machines. 
+            The machine language is only made of 0 and 1 understandable for the computers.
+            <br /><br />
+            An assembly program is a computer program that translates assembly code into code
+machine. This translation process is called assembly. There may be more than one program
+different assemblers for the same assembly language (just as there are several C compilers
+different for language C).
+            <figure id="machine">
+                <img src ="img/machine.PNG" alt="diagram ppt"/>
+            </figure>
+            Once assembly is complete, the generated machine code can be loaded into memory and executed by a
+microprocessor.
+        </div>
+        
+        
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->
+        <footer>
+            <hr>
+            <figure id="me">
+                <img src ="img/csumb_logo.png" alt="Picture of csumb_logo"/>
+            </figure>
+            Internet Programming. 2020&copy;Zodi
+            <strong> Disclaimer:</strong>The information in this webpage is fictitous.<br/>
+            It is used for academic purpose only.
+        </footer>
+        <!-- closing footer -->
+        
+    </body>
+    <!-- closing body -->
+
+</html>
