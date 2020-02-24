@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title> Shopping Cart </title>
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    	<link rel="stylesheet" type="text/css" href="Shopping_Cart.css">
+    </head>
+    <body>
+    	<h1> Shopping Cart </h1>
+    	<div class="object1">
+    		<span class="title_object">Jacket </span>
+    		<div class="img"> <img src ="jacket.png" alt="jacket"/></div>
+    		<div class = "details_objet">
+    				Price : $39,99
+    			<div class="numberjacket"> Number </div>
+    			<input type="number" id="numberofjacket" name="numberofjacket"><br>
+    			<span id="numberofjacketError"></span>
+    		</div>
+    	</div>
+    	<div class="object2">
+    		<span class="title_object">Book</span>
+    		<div class="img"><img src ="book.jpg" alt="book"/></div>
+    		<div class="details_objet"></div>
+    				Price : $9,99
+    			<div class="numberBook"> Number </div>
+    			<input type="number" id="numberofbook" name="numberofbook"><br>
+    			<span id="numberofbookError"></span>
+    	</div>
+    	<div class = "results">Total Amount of order :  $<span id="results"></span></div>
+    	<script>
+    		var results1=0;
+    		var results2=0;
+    		$("#numberofjacket").on("change",function(){
+    			if($("#numberofjacket").val()<1)
+    			{
+    				$("#numberofjacketError").html("Nummber is unavailable!");
+                	$("#numberofjacketError").css("color", "red");
+                	results1=0;
+                	$("#results").html(results1+results2);
+    			}
+    			else
+    			{
+    				$("#numberofjacketError").html("");
+    				results1=$("#numberofjacket").val()*39,99;
+    				$("#results").html(results1+results2);
+    			}
+    		});
+    		$("#numberofbook").on("change",function(){
+    			if($("#numberofbook").val()<1)
+    			{
+    				$("#numberofbookError").html("Nummber is unavailable!");
+                	$("#numberofbookError").css("color", "red");
+                	results2=0;
+                	$("#results").html(results1+results2);
+    			}
+    			else
+    			{
+    				$("#numberofbookError").html("");
+    				results2=$("#numberofbook").val()*9,99;
+    				$("#results").html(results1+results2);
+    			}
+    		});
+    		$("#results").html(results1+results2);
+    	</script>
+    </body>
