@@ -22,7 +22,7 @@ $(document).ready(function( )
                     //add the founded image, the thumb image and the number of likes in the first colomn.
                     $("#photo1").append("<div id='prout' style='padding:25px 50px'><img src="+result.results[i].urls.small+"> <img src=\"thumb.png\" width='220px' height='100px'><a style='font-size:50px'>:  "+result.results[i].likes+"</a></div>");
                     //add the founded image, the thumb image and the number of likes in the second colomn.
-                    $("#photo2").append("<div id='prout' style='padding:25px 50px'><img src="+result.results[i+4].urls.small+"> <img src=\"heart.png\"width='130px' height='120px'><a style='font-size:50px'>:  "+result.results[i].likes+"</a></div>");
+                    $("#photo2").append("<div id='prout' style='padding:25px 50px'><img src="+result.results[i+4].urls.small+"> <img src=\"heart.png\"width='130px' height='120px'><a style='font-size:50px'>:  "+result.results[i+4].likes+"</a></div>");
 
                 }; 
             }
@@ -48,7 +48,7 @@ $(document).ready(function( )
                     //add the founded image, the thumb image and the number of likes in the first colomn.
                     $("#photo1").append("<div id='prout' style='padding:25px 50px'><img src="+result.results[i].urls.small+"> <img src=\"thumb.png\" width='220px' height='100px'><a style='font-size:50px'>:  "+result.results[i].likes+"</a></div>");
                     //add the founded image, the thumb image and the number of likes in the second colomn.
-                    $("#photo2").append("<div id='prout' style='padding:25px 50px'><img src="+result.results[i+4].urls.small+"> <img src=\"heart.png\"width='130px' height='120px'><a style='font-size:50px'>:  "+result.results[i].likes+"</a></div>");
+                    $("#photo2").append("<div id='prout' style='padding:25px 50px'><img src="+result.results[i+4].urls.small+"> <img src=\"heart.png\"width='130px' height='120px'><a style='font-size:50px'>:  "+result.results[i+4].likes+"</a></div>");
                 };   
             }
     	})
