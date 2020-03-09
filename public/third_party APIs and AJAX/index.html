@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Unplash Web API</title>
+	<meta charset="utf-8">
+	<!--Include jquery script link -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<!--Include bootstap-->
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  	<!--Include the css file-->
+  	<link rel="stylesheet" type="text/css" href="css/app.css">
+  	<!--Create the Java script file-->
+  	<script src="js/app.js"></script>
+</head>
+<body>
+	<!-- Create a class to put all the elements in center and jumbotron style from bootstap-->
+	<div class="to_center jumbotron">
+		<!--Create a big title -->
+		<h1> Unsplash Web API</h1>
+		<br>
+		<!--Create an text input -->
+		<span> Search term : <input type="text" id="keyword" name="keyword">
+		<!--Create a button -->
+		<button class="Search_button"id="Search_button" type="button">Search</button></span>
+		<br>
+		<hr>
+	</div>
+	<!--Initialize a table and two colomns to insert the photos-->
+	<table>
+		<td id="photo1"></td>
+		<td id="photo2"></td>
+	</table>
+
+</body>
+</html>
